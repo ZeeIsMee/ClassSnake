@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "SnakeBoard2/1.0.0": {
+        "runtime": {
+          "SnakeBoard2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SnakeBoard2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
