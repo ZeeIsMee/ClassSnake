@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Zach\\Downloads\\SnakeBoard2-3 (2)\\SnakeBoard2-3\\SnakeBoard2\\SnakeBoard2\\SnakeBoard2\\SnakeBoard3.vbproj": {}
+    "C:\\Users\\zachz\\Downloads\\SnakeBoard2-3 (1)\\SnakeBoard2-3\\SnakeBoard2\\SnakeBoard2\\SnakeBoard2\\SnakeBoard3.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\Zach\\Downloads\\SnakeBoard2-3 (2)\\SnakeBoard2-3\\SnakeBoard2\\SnakeBoard2\\SnakeBoard2\\SnakeBoard3.vbproj": {
+    "C:\\Users\\zachz\\Downloads\\SnakeBoard2-3 (1)\\SnakeBoard2-3\\SnakeBoard2\\SnakeBoard2\\SnakeBoard2\\SnakeBoard3.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zach\\Downloads\\SnakeBoard2-3 (2)\\SnakeBoard2-3\\SnakeBoard2\\SnakeBoard2\\SnakeBoard2\\SnakeBoard3.vbproj",
+        "projectUniqueName": "C:\\Users\\zachz\\Downloads\\SnakeBoard2-3 (1)\\SnakeBoard2-3\\SnakeBoard2\\SnakeBoard2\\SnakeBoard2\\SnakeBoard3.vbproj",
         "projectName": "SnakeBoard3",
-        "projectPath": "C:\\Users\\Zach\\Downloads\\SnakeBoard2-3 (2)\\SnakeBoard2-3\\SnakeBoard2\\SnakeBoard2\\SnakeBoard2\\SnakeBoard3.vbproj",
-        "packagesPath": "C:\\Users\\Zach\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zach\\Downloads\\SnakeBoard2-3 (2)\\SnakeBoard2-3\\SnakeBoard2\\SnakeBoard2\\SnakeBoard2\\obj\\",
+        "projectPath": "C:\\Users\\zachz\\Downloads\\SnakeBoard2-3 (1)\\SnakeBoard2-3\\SnakeBoard2\\SnakeBoard2\\SnakeBoard2\\SnakeBoard3.vbproj",
+        "packagesPath": "C:\\Users\\zachz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zachz\\Downloads\\SnakeBoard2-3 (1)\\SnakeBoard2-3\\SnakeBoard2\\SnakeBoard2\\SnakeBoard2\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Zach\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\zachz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

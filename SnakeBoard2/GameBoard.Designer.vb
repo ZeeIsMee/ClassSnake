@@ -24,6 +24,7 @@ Partial Class GameBoard
     Private Sub InitializeComponent()
         Me.lblScore = New System.Windows.Forms.Label()
         Me.pctSnake = New System.Windows.Forms.PictureBox()
+        Me.lblcount = New System.Windows.Forms.Label()
         CType(Me.pctSnake, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -42,15 +43,26 @@ Partial Class GameBoard
         Me.pctSnake.BackColor = System.Drawing.SystemColors.ControlDark
         Me.pctSnake.Location = New System.Drawing.Point(348, 218)
         Me.pctSnake.Name = "pctSnake"
-        Me.pctSnake.Size = New System.Drawing.Size(13, 50)
+        Me.pctSnake.Size = New System.Drawing.Size(13, 13)
         Me.pctSnake.TabIndex = 0
         Me.pctSnake.TabStop = False
+        '
+        'lblcount
+        '
+        Me.lblcount.AutoSize = True
+        Me.lblcount.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblcount.Location = New System.Drawing.Point(303, 13)
+        Me.lblcount.Name = "lblcount"
+        Me.lblcount.Size = New System.Drawing.Size(24, 30)
+        Me.lblcount.TabIndex = 3
+        Me.lblcount.Text = "0"
         '
         'GameBoard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(784, 561)
+        Me.Controls.Add(Me.lblcount)
         Me.Controls.Add(Me.pctSnake)
         Me.Controls.Add(Me.lblScore)
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
@@ -66,4 +78,5 @@ Partial Class GameBoard
 
     Friend WithEvents lblScore As Label
     Friend WithEvents pctSnake As PictureBox
+    Friend WithEvents lblcount As Label
 End Class

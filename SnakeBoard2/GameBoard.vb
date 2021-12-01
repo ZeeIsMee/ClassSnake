@@ -32,8 +32,36 @@
         moveApple()
     End Sub
 
-    Private Sub moveSnake(ByVal sender As System.Object, ByVal e As KeyEventArgs) Handles MyBase.KeyDown
+    Public Sub eat()
 
+
+        Dim currentX, currentY As Double
+        Dim xLimitC, yLimitC, xLimitUpperC, xLimitLowerC, yLimitUpperC, yLimitLowerC As Double
+
+
+
+        'define current posistion of snake head
+        currentX = pctSnake.Location.X
+        currentY = pctSnake.Location.Y
+
+        'define border that represents apple
+        xLimitUpperC = pb.Location.X + 10
+        xLimitLowerC = pb.Location.X - 10
+        yLimitUpperC = pb.Location.Y + 10
+        yLimitLowerC = pb.Location.Y - 10
+
+
+
+
+        'check posisiton vs apple for collision
+        If currentX < xLimitUpperC And currentX > xLimitLowerC And currentY < yLimitUpperC And currentY > yLimitLowerC Then
+            moveApple()
+            lblcount.Text = Val(lblcount.Text) + 1
+
+        End If
+    End Sub
+    Private Sub moveSnake(ByVal sender As System.Object, ByVal e As KeyEventArgs) Handles MyBase.KeyDown
+        eat()
         Select Case e.KeyCode
             Case Keys.Right
                 hor = hor + 5
