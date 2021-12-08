@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class GameBoard
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,17 +20,20 @@ Partial Class GameBoard
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.lblScore = New System.Windows.Forms.Label()
         Me.pctSnake = New System.Windows.Forms.PictureBox()
         Me.lblcount = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.pctSnake, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblScore
         '
         Me.lblScore.AutoSize = True
+        Me.lblScore.BackColor = System.Drawing.Color.Transparent
         Me.lblScore.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lblScore.Location = New System.Drawing.Point(228, 13)
         Me.lblScore.Name = "lblScore"
@@ -41,7 +44,7 @@ Partial Class GameBoard
         'pctSnake
         '
         Me.pctSnake.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.pctSnake.Location = New System.Drawing.Point(348, 218)
+        Me.pctSnake.Location = New System.Drawing.Point(375, 197)
         Me.pctSnake.Name = "pctSnake"
         Me.pctSnake.Size = New System.Drawing.Size(13, 13)
         Me.pctSnake.TabIndex = 0
@@ -50,6 +53,7 @@ Partial Class GameBoard
         'lblcount
         '
         Me.lblcount.AutoSize = True
+        Me.lblcount.BackColor = System.Drawing.Color.Transparent
         Me.lblcount.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lblcount.Location = New System.Drawing.Point(303, 13)
         Me.lblcount.Name = "lblcount"
@@ -79,4 +83,5 @@ Partial Class GameBoard
     Friend WithEvents lblScore As Label
     Friend WithEvents pctSnake As PictureBox
     Friend WithEvents lblcount As Label
+    Friend WithEvents Timer1 As Timer
 End Class

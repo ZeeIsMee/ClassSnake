@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zachz\\Downloads\\SnakeBoard2-3 (1)\\SnakeBoard2-3\\SnakeBoard2\\SnakeBoard2\\SnakeBoard2\\SnakeBoard3.vbproj": {}
+    "C:\\Users\\fisherj\\Documents\\ClassSnake-movement.2\\ClassSnake-movement 2\\ClassSnake-movement 2\\ClassSnake-movement\\SnakeBoard2\\SnakeBoard3.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\zachz\\Downloads\\SnakeBoard2-3 (1)\\SnakeBoard2-3\\SnakeBoard2\\SnakeBoard2\\SnakeBoard2\\SnakeBoard3.vbproj": {
+    "C:\\Users\\fisherj\\Documents\\ClassSnake-movement.2\\ClassSnake-movement 2\\ClassSnake-movement 2\\ClassSnake-movement\\SnakeBoard2\\SnakeBoard3.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zachz\\Downloads\\SnakeBoard2-3 (1)\\SnakeBoard2-3\\SnakeBoard2\\SnakeBoard2\\SnakeBoard2\\SnakeBoard3.vbproj",
+        "projectUniqueName": "C:\\Users\\fisherj\\Documents\\ClassSnake-movement.2\\ClassSnake-movement 2\\ClassSnake-movement 2\\ClassSnake-movement\\SnakeBoard2\\SnakeBoard3.vbproj",
         "projectName": "SnakeBoard3",
-        "projectPath": "C:\\Users\\zachz\\Downloads\\SnakeBoard2-3 (1)\\SnakeBoard2-3\\SnakeBoard2\\SnakeBoard2\\SnakeBoard2\\SnakeBoard3.vbproj",
-        "packagesPath": "C:\\Users\\zachz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zachz\\Downloads\\SnakeBoard2-3 (1)\\SnakeBoard2-3\\SnakeBoard2\\SnakeBoard2\\SnakeBoard2\\obj\\",
+        "projectPath": "C:\\Users\\fisherj\\Documents\\ClassSnake-movement.2\\ClassSnake-movement 2\\ClassSnake-movement 2\\ClassSnake-movement\\SnakeBoard2\\SnakeBoard3.vbproj",
+        "packagesPath": "C:\\Users\\fisherj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fisherj\\Documents\\ClassSnake-movement.2\\ClassSnake-movement 2\\ClassSnake-movement 2\\ClassSnake-movement\\SnakeBoard2\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\zachz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fisherj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +61,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
