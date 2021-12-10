@@ -10,11 +10,11 @@
             Case RadEasy.Checked
                 Difficulty = 80
             Case RadMedium.Checked
-                Difficulty = 50
+                Difficulty = 60
             Case RadHard.Checked
-                Difficulty = 20
+                Difficulty = 40
             Case RadExtreme.Checked
-                Difficulty = 8
+                Difficulty = 20
         End Select
 
 

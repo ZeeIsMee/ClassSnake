@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "LM3JxK5NnlG2PUQuVAUyI11jrc6QOyEN9Od1k7lEW5RQGF/AiSvf8rkOsQ5IOraDxkHG5C73k56xpMBjWN7mSg==",
+  "dgSpecHash": "SHyoWRzdM7mK2fqlBRadGNS/fGXMMVC91mODE5fg0sJiJFADAEW6tUHmNW7oFhFH0v3zfaPkc2Q7B6EyAnURbA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fisherj\\Documents\\ClassSnake-movement.2\\ClassSnake-movement 2\\ClassSnake-movement 2\\ClassSnake-movement\\SnakeBoard2\\SnakeBoard3.vbproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Stefan\\Downloads\\ClassSnake-movement\\ClassSnake-movement\\SnakeBoard2\\SnakeBoard3.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Stefan\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512",
+    "C:\\Users\\Stefan\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Stefan\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Stefan\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
