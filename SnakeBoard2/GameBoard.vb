@@ -4,12 +4,14 @@
     Dim MyMaxX As Integer = 750
     Dim MyMaxY As Integer = 550
     Dim Generator As System.Random = New System.Random()
-    Dim direction As Integer = 0
     Dim change As Boolean = False
-    Dim exitGame As Boolean = False
     Dim Difficulty As Integer = 80
     Dim currentX, currentY As Double
     Dim xLimitC, yLimitC, xLimitUpperC, xLimitLowerC, yLimitUpperC, yLimitLowerC As Double
+    Dim grow As New List(Of Boolean)
+    Dim snakeCount As Integer = 0
+    Dim prevert, prehor As Integer
+    Dim body As New List(Of PictureBox)
 
     Dim vert As Integer = 197 'Snake head location vertial
     Dim hor As Integer = 375   'Snake head location Horizontal
@@ -21,7 +23,12 @@
         pb.BackColor = Color.Red
         pb.Visible = True
         Me.Controls.Add(pb)
+        grow.Clear()
         Timer1.Start() 'unused. Thread event used instead
+
+        For i = 0 To 99
+            grow.Add(False)
+        Next
 
 
         'Dim menu As New StartMenu
@@ -57,8 +64,39 @@
         If currentX < xLimitUpperC And currentX > xLimitLowerC And currentY < yLimitUpperC And currentY > yLimitLowerC Then
             moveApple()
             lblcount.Text = Val(lblcount.Text) + 1
+            growSnake()
 
         End If
+    End Sub
+
+    Private Sub growSnake()
+        grow(snakeCount) = True
+        'Adds in a new body segment and positions it
+        For i = 0 To snakeCount + 1
+            body.Add(New PictureBox)
+            body(snakeCount).Width = 13
+            body(snakeCount).Height = 13
+            body(snakeCount).BackColor = Color.Blue
+            body(snakeCount).Visible = True
+            Me.Controls.Add(body(snakeCount))
+            body(snakeCount).Location = New Point(prehor, prevert)
+        Next
+
+        snakeCount += 1
+
+    End Sub
+
+    Private Sub moveBody()
+        'Checks the boolean array and moves the segments that are true
+        For i = 0 To 99
+            If grow(i) = True Then
+                Dim temp As Integer = body(i).Location.X
+                Dim temp2 As Integer = body(i).Location.Y
+                body(i).Location = New Point(prehor, prevert)
+                prehor = temp
+                prevert = temp2
+            End If
+        Next
     End Sub
     Private Sub moveSnake(ByVal sender As System.Object, ByVal e As KeyEventArgs) Handles MyBase.KeyDown
         eat() 'Not needed
@@ -67,8 +105,11 @@
             Case Keys.Right
                 While change = False
                     My.Application.DoEvents()
-                    hor = hor + 5
+                    prehor = hor
+                    prevert = vert
+                    hor = hor + 13
                     pctSnake.Location = New Point(hor, vert)
+                    moveBody()
                     If checkColl() Then
                         GameOver()
                         Exit While
@@ -80,8 +121,11 @@
             Case Keys.Left
                 While change = False
                     My.Application.DoEvents()
-                    hor = hor - 5
+                    prehor = hor
+                    prevert = vert
+                    hor = hor - 13
                     pctSnake.Location = New Point(hor, vert)
+                    moveBody()
                     If checkColl() Then
                         GameOver()
                         Exit While
@@ -92,8 +136,11 @@
             Case Keys.Up
                 While change = False
                     My.Application.DoEvents()
-                    vert = vert - 5
+                    prehor = hor
+                    prevert = vert
+                    vert = vert - 13
                     pctSnake.Location = New Point(hor, vert)
+                    moveBody()
                     If checkColl() Then
                         GameOver()
                         Exit While
@@ -104,8 +151,11 @@
             Case Keys.Down
                 While change = False
                     My.Application.DoEvents()
-                    vert = vert + 5
+                    prehor = hor
+                    prevert = vert
+                    vert = vert + 13
                     pctSnake.Location = New Point(hor, vert)
+                    moveBody()
                     If checkColl() Then
                         GameOver()
                         Exit While
@@ -132,6 +182,13 @@
             change = True
             'GameOver()
             Return True
+        ElseIf snakeCount > 0 Then
+            For i = 0 To snakeCount
+                If pctSnake.Location.X = body(i).Location.X And pctSnake.Location.Y = body(i).Location.Y Then
+                    change = True
+                    Return True
+                End If
+            Next
         Else
             Return False
         End If
@@ -143,5 +200,12 @@
         hor = 375
         vert = 197
         pctSnake.Location = New Point(hor, vert)
+        body.Clear()
+        grow.Clear()
+        For i = 0 To 99
+            grow.Add(False)
+        Next
+        snakeCount = 0
+        Application.Restart()
     End Sub
 End Class
