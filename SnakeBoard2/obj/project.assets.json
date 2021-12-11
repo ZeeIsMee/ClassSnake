@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\stefo\\Downloads\\ClassSnake-movement (1)\\ClassSnake-movement\\SnakeBoard2\\SnakeBoard3.vbproj",
+      "projectUniqueName": "C:\\Users\\stefo\\Downloads\\ClassSnake-updatedboardandcomments\\ClassSnake-movement (1)\\ClassSnake-movement\\SnakeBoard2\\SnakeBoard3.vbproj",
       "projectName": "SnakeBoard3",
-      "projectPath": "C:\\Users\\stefo\\Downloads\\ClassSnake-movement (1)\\ClassSnake-movement\\SnakeBoard2\\SnakeBoard3.vbproj",
+      "projectPath": "C:\\Users\\stefo\\Downloads\\ClassSnake-updatedboardandcomments\\ClassSnake-movement (1)\\ClassSnake-movement\\SnakeBoard2\\SnakeBoard3.vbproj",
       "packagesPath": "C:\\Users\\stefo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\stefo\\Downloads\\ClassSnake-movement (1)\\ClassSnake-movement\\SnakeBoard2\\obj\\",
+      "outputPath": "C:\\Users\\stefo\\Downloads\\ClassSnake-updatedboardandcomments\\ClassSnake-movement (1)\\ClassSnake-movement\\SnakeBoard2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

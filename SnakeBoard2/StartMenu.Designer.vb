@@ -40,26 +40,29 @@ Partial Class StartMenu
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.Color.Green
-        Me.Label1.Location = New System.Drawing.Point(150, 58)
+        Me.Label1.Location = New System.Drawing.Point(214, 97)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(200, 65)
+        Me.Label1.Size = New System.Drawing.Size(297, 96)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "SNAKE!"
         '
         'btnStart
         '
-        Me.btnStart.Location = New System.Drawing.Point(200, 157)
+        Me.btnStart.Location = New System.Drawing.Point(286, 262)
+        Me.btnStart.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnStart.Name = "btnStart"
-        Me.btnStart.Size = New System.Drawing.Size(75, 23)
+        Me.btnStart.Size = New System.Drawing.Size(107, 38)
         Me.btnStart.TabIndex = 1
         Me.btnStart.Text = "Start"
         Me.btnStart.UseVisualStyleBackColor = True
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(200, 216)
+        Me.btnExit.Location = New System.Drawing.Point(286, 360)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnExit.Size = New System.Drawing.Size(107, 38)
         Me.btnExit.TabIndex = 2
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
@@ -70,22 +73,22 @@ Partial Class StartMenu
         Me.GroupBox1.Controls.Add(Me.RadHard)
         Me.GroupBox1.Controls.Add(Me.RadMedium)
         Me.GroupBox1.Controls.Add(Me.RadEasy)
-        Me.GroupBox1.Location = New System.Drawing.Point(300, 149)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.GroupBox1.Location = New System.Drawing.Point(429, 248)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(1, 1, 1, 1)
-        Me.GroupBox1.Size = New System.Drawing.Size(100, 95)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(1, 2, 1, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(187, 158)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
+        Me.GroupBox1.Text = "Select Difficulty"
         '
         'RadExtreme
         '
         Me.RadExtreme.AutoSize = True
-        Me.RadExtreme.Location = New System.Drawing.Point(2, 73)
-        Me.RadExtreme.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.RadExtreme.Location = New System.Drawing.Point(3, 122)
+        Me.RadExtreme.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.RadExtreme.Name = "RadExtreme"
-        Me.RadExtreme.Size = New System.Drawing.Size(68, 19)
+        Me.RadExtreme.Size = New System.Drawing.Size(100, 29)
         Me.RadExtreme.TabIndex = 3
         Me.RadExtreme.TabStop = True
         Me.RadExtreme.Text = "Extreme"
@@ -94,10 +97,10 @@ Partial Class StartMenu
         'RadHard
         '
         Me.RadHard.AutoSize = True
-        Me.RadHard.Location = New System.Drawing.Point(2, 55)
-        Me.RadHard.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.RadHard.Location = New System.Drawing.Point(3, 92)
+        Me.RadHard.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.RadHard.Name = "RadHard"
-        Me.RadHard.Size = New System.Drawing.Size(51, 19)
+        Me.RadHard.Size = New System.Drawing.Size(76, 29)
         Me.RadHard.TabIndex = 2
         Me.RadHard.TabStop = True
         Me.RadHard.Text = "Hard"
@@ -106,10 +109,10 @@ Partial Class StartMenu
         'RadMedium
         '
         Me.RadMedium.AutoSize = True
-        Me.RadMedium.Location = New System.Drawing.Point(2, 36)
-        Me.RadMedium.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.RadMedium.Location = New System.Drawing.Point(3, 60)
+        Me.RadMedium.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.RadMedium.Name = "RadMedium"
-        Me.RadMedium.Size = New System.Drawing.Size(70, 19)
+        Me.RadMedium.Size = New System.Drawing.Size(103, 29)
         Me.RadMedium.TabIndex = 1
         Me.RadMedium.TabStop = True
         Me.RadMedium.Text = "Medium"
@@ -118,10 +121,10 @@ Partial Class StartMenu
         'RadEasy
         '
         Me.RadEasy.AutoSize = True
-        Me.RadEasy.Location = New System.Drawing.Point(2, 18)
-        Me.RadEasy.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.RadEasy.Location = New System.Drawing.Point(3, 30)
+        Me.RadEasy.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.RadEasy.Name = "RadEasy"
-        Me.RadEasy.Size = New System.Drawing.Size(48, 19)
+        Me.RadEasy.Size = New System.Drawing.Size(72, 29)
         Me.RadEasy.TabIndex = 0
         Me.RadEasy.TabStop = True
         Me.RadEasy.Text = "Easy"
@@ -129,13 +132,14 @@ Partial Class StartMenu
         '
         'StartMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(498, 415)
+        Me.ClientSize = New System.Drawing.Size(711, 692)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "StartMenu"
         Me.Text = "SNAKE!"
         Me.GroupBox1.ResumeLayout(False)
