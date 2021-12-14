@@ -207,26 +207,26 @@ Public Class GameBoard
   End Sub
 
   Private Function checkColl() As Boolean
-    'boolean value that states whether or not the snake has collided with either itself or the boundry
-    If pctSnake.Location.X > picborderright.Location.X Or pctSnake.Location.X < picborderleft.Location.X Then
-      'MessageBox.Show("Collision")
-      change = True
-      'GameOver()
-      Return True
-    ElseIf pctSnake.Location.Y > picborderbottom.Location.Y Or pctSnake.Location.Y < picbordertop.Location.Y Then
-      'MessageBox.Show("Collision")
-      change = True
-      'GameOver()
-      Return True
-    ElseIf snakeCount > 0 Then
-      For i = 0 To snakeCount
-        If pctSnake.Location.X = body(i).Location.X And pctSnake.Location.Y = body(i).Location.Y Then
-          change = True
-          Return True
-        End If
-      Next
-    Else
-      Return False
+        'boolean value that states whether or not the snake has collided with either itself or the boundry
+        If pctSnake.Location.X > MyMaxX Or pctSnake.Location.X < MyMin Then
+            'MessageBox.Show("Collision")
+            change = True
+            'GameOver()
+            Return True
+        ElseIf pctSnake.Location.Y > MyMaxY Or pctSnake.Location.Y < MyMin Then
+            'MessageBox.Show("Collision")
+            change = True
+            'GameOver()
+            Return True
+        ElseIf snakeCount > 0 Then
+            For i = 0 To snakeCount
+                If pctSnake.Location.X = body(i).Location.X And pctSnake.Location.Y = body(i).Location.Y Then
+                    change = True
+                    Return True
+                End If
+            Next
+        Else
+            Return False
     End If
   End Function
 
