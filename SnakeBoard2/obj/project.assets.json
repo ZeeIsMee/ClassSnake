@@ -8,23 +8,23 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\snyders65406\\.nuget\\packages\\": {},
+    "C:\\Users\\batesj73549\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\snyders65406\\Downloads\\ClassSnake-movement (2)\\ClassSnake-movement\\SnakeBoard2\\SnakeBoard3.vbproj",
+      "projectUniqueName": "C:\\Users\\batesj73549\\Desktop\\CISC113_VisualBasic\\ClassSnake-movement\\ClassSnake-movement\\SnakeBoard2\\SnakeBoard3.vbproj",
       "projectName": "SnakeBoard3",
-      "projectPath": "C:\\Users\\snyders65406\\Downloads\\ClassSnake-movement (2)\\ClassSnake-movement\\SnakeBoard2\\SnakeBoard3.vbproj",
-      "packagesPath": "C:\\Users\\snyders65406\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\snyders65406\\Downloads\\ClassSnake-movement (2)\\ClassSnake-movement\\SnakeBoard2\\obj\\",
+      "projectPath": "C:\\Users\\batesj73549\\Desktop\\CISC113_VisualBasic\\ClassSnake-movement\\ClassSnake-movement\\SnakeBoard2\\SnakeBoard3.vbproj",
+      "packagesPath": "C:\\Users\\batesj73549\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\batesj73549\\Desktop\\CISC113_VisualBasic\\ClassSnake-movement\\ClassSnake-movement\\SnakeBoard2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\snyders65406\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\batesj73549\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

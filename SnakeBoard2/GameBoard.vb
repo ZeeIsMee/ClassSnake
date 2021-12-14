@@ -4,21 +4,21 @@
 Public Class GameBoard
 
 
-  Dim pb As New PictureBox 'the apple
-  Dim MyMin As Integer 'minimum outer boundaries for apple locations
+    ReadOnly pb As New PictureBox 'the apple
+    Dim MyMin As Integer 'minimum outer boundaries for apple locations
   Dim MyMaxX As Integer  'maximum outer boundaries for apple locations horizontally
   Dim MyMaxY As Integer  'maximum outer boundaries for apple locations vertically
-  Dim Generator As System.Random = New System.Random() 'generates a random location for the apple after it is eaten
-  Dim change As Boolean = False 'boolean that checks for user kepresses
+    ReadOnly Generator As System.Random = New System.Random() 'generates a random location for the apple after it is eaten
+    Dim change As Boolean = False 'boolean that checks for user kepresses
   Dim Difficulty As Integer = 80 'determines the speed the snake travels, defaulted at 80
   Dim currentX, currentY As Double 'the snake head's current coordinates
   Dim xLimitC, yLimitC, xLimitUpperC, xLimitLowerC, yLimitUpperC, yLimitLowerC As Double 'used to determine collision with apple
-  Dim grow As New List(Of Boolean) 'variable to generate new portions of the snake
-  Dim snakeCount As Integer = 0 'number of segments added to snake
+    ReadOnly grow As New List(Of Boolean) 'variable to generate new portions of the snake
+    Dim snakeCount As Integer = 0 'number of segments added to snake
   Dim prevert, prehor As Integer 'the location the snake head prevously occupied before colliding with the apple
-  Dim body As New List(Of PictureBox) 'variable for generating new sections of the snake
+    ReadOnly body As New List(Of PictureBox) 'variable for generating new sections of the snake
 
-  Dim vert As Integer = 200 'Snake head location vertial
+    Dim vert As Integer = 200 'Snake head location vertial
   Dim hor As Integer = 200   'Snake head location Horizontal
   Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
     'generates the apple, checks user resolution, sets snake body generation to limit at 100
@@ -70,11 +70,9 @@ Public Class GameBoard
     Difficulty = sender
   End Function
 
-  Private Sub GroupBox1_Enter(sender As Object, e As EventArgs)
 
-  End Sub
 
-  Private Sub moveApple() 'sets a new location for the apple after it is eaten
+    Private Sub moveApple() 'sets a new location for the apple after it is eaten
     pb.Location = New Point(Generator.Next(MyMin, MyMaxX), Generator.Next(MyMin, MyMaxY))
   End Sub
 
@@ -92,14 +90,14 @@ Public Class GameBoard
     yLimitUpperC = pb.Location.Y + 15
     yLimitLowerC = pb.Location.Y - 15
 
-    'check posisiton vs apple for collision
-    If currentX < xLimitUpperC And currentX > xLimitLowerC And currentY < yLimitUpperC And currentY > yLimitLowerC Then
-      moveApple()
-      lblcount.Text = Val(lblcount.Text) + 1
-      growSnake()
+        'check posisiton vs apple for collision
+        If currentX < xLimitUpperC AndAlso currentX > xLimitLowerC AndAlso currentY < yLimitUpperC AndAlso currentY > yLimitLowerC Then
+            moveApple()
+            lblcount.Text = Val(lblcount.Text) + 1
+            growSnake()
 
-    End If
-  End Sub
+        End If
+    End Sub
 
   Private Sub growSnake()
     'sub to add new segments to the snake after eating an apple
@@ -142,15 +140,15 @@ Public Class GameBoard
           My.Application.DoEvents()
           prehor = hor
           prevert = vert
-          hor = hor + 13
-          pctSnake.Location = New Point(hor, vert)
+                    hor = hor + 13
+                    pctSnake.Location = New Point(hor, vert)
           moveBody()
-          If checkColl() Then
-            GameOver()
-            Exit While
-          End If
-          'declare eat method based on key movement
-          eat()
+                    If checkCollision() Then
+                        GameOver()
+                        Exit While
+                    End If
+                    'declare eat method based on key movement
+                    eat()
           System.Threading.Thread.Sleep(Difficulty)
         End While
       Case Keys.Left
@@ -161,11 +159,11 @@ Public Class GameBoard
           hor = hor - 13
           pctSnake.Location = New Point(hor, vert)
           moveBody()
-          If checkColl() Then
-            GameOver()
-            Exit While
-          End If
-          eat()
+                    If checkCollision() Then
+                        GameOver()
+                        Exit While
+                    End If
+                    eat()
           System.Threading.Thread.Sleep(Difficulty)
         End While
       Case Keys.Up
@@ -176,11 +174,11 @@ Public Class GameBoard
           vert = vert - 13
           pctSnake.Location = New Point(hor, vert)
           moveBody()
-          If checkColl() Then
-            GameOver()
-            Exit While
-          End If
-          eat()
+                    If checkCollision() Then
+                        GameOver()
+                        Exit While
+                    End If
+                    eat()
           System.Threading.Thread.Sleep(Difficulty)
         End While
       Case Keys.Down
@@ -191,44 +189,44 @@ Public Class GameBoard
           vert = vert + 13
           pctSnake.Location = New Point(hor, vert)
           moveBody()
-          If checkColl() Then
-            GameOver()
-            Exit While
-          End If
-          eat()
+                    If checkCollision() Then
+                        GameOver()
+                        Exit While
+                    End If
+                    eat()
           System.Threading.Thread.Sleep(Difficulty)
         End While
     End Select
 
-    If e.KeyCode = Keys.Up Or e.KeyCode = Keys.Right Or e.KeyCode = Keys.Down Or e.KeyCode = Keys.Left Then
-      change = True
-    End If
+        If e.KeyCode = Keys.Up OrElse e.KeyCode = Keys.Right OrElse e.KeyCode = Keys.Down OrElse e.KeyCode = Keys.Left Then
+            change = True
+        End If
 
-  End Sub
+    End Sub
 
-  Private Function checkColl() As Boolean
+    Private Function checkCollision() As Boolean
         'boolean value that states whether or not the snake has collided with either itself or the boundry
-        If pctSnake.Location.X > MyMaxX Or pctSnake.Location.X < MyMin Then
+        If pctSnake.Location.X > MyMaxX OrElse pctSnake.Location.X < MyMin Then
             'MessageBox.Show("Collision")
             change = True
             'GameOver()
             Return True
-        ElseIf pctSnake.Location.Y > MyMaxY Or pctSnake.Location.Y < MyMin Then
+        ElseIf pctSnake.Location.Y > MyMaxY OrElse pctSnake.Location.Y < MyMin Then
             'MessageBox.Show("Collision")
             change = True
             'GameOver()
             Return True
         ElseIf snakeCount > 0 Then
             For i = 0 To snakeCount
-                If pctSnake.Location.X = body(i).Location.X And pctSnake.Location.Y = body(i).Location.Y Then
+                If pctSnake.Location.X = body(i).Location.X AndAlso pctSnake.Location.Y = body(i).Location.Y Then
                     change = True
                     Return True
                 End If
             Next
         Else
             Return False
-    End If
-  End Function
+        End If
+    End Function
 
     Private Sub GameOver()
         'Notifies the user that the game has ended, resets the nessesary variables and relaunches the game
